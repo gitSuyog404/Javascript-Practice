@@ -182,3 +182,80 @@
 
 // let p = Math.PI;
 // console.log(p);
+
+
+// # Creating a Hypotenuse calculating practice program
+
+// 1. Basic one
+
+// let a  = Number(window.prompt("Enter the value for the side a"));
+// let b  = Number(window.prompt("Enter the value for the side b"));
+
+// let c = Math.pow(a,2) + Math.pow(b,2);
+// c = Math.sqrt(c);
+
+// console.log(`The value of side C is ${c}`);
+
+// making the same thing in lesser steps
+
+// let c = Math.sqrt(Math.pow(a,2)+ Math.pow(b,2));
+// console.log(`Side C: ${c}`);
+
+// Making a little more advanced version of this same program 
+// By accepting user inputs using Html Textboxes
+
+
+// document.getElementById("submitbtn").onclick = function(){
+//     let a = Number(document.getElementById("atxtbox").value);
+
+//     let b = Number(document.getElementById("btxtbox").value);
+
+//    let c = Math.sqrt(Math.pow(a,2)+ Math.pow(b,2));
+
+//     document.getElementById("cLabel").innerHTML = `Side C: ${c};`
+// }
+
+
+// # Creating a simple counter program
+
+// let count = 0;
+// document.getElementById("decBtn").onclick = function(){
+//     count -= 1;
+//     document.getElementById("countLabel").innerHTML = count;
+// };
+
+// document.getElementById("resetBtn").onclick = function(){
+//     count = 0;
+//     document.getElementById("countLabel").innerHTML = count;
+// };
+
+// document.getElementById("incBtn").onclick = function(){
+//     count += 1;
+//     document.getElementById("countLabel").innerHTML = count;
+
+// };
+
+
+// # Creating a random number generator
+
+// If you multiply Math.random with a number then it will give results between 0(but if you want to change the initial value then add the mulitplied value with + _number) to 6
+// For example:
+//  let x = Math.floor(Math.random()*7)+1;
+
+// Basic :
+// let x = Math.floor(Math.random()*6) +1;
+// console.log(x);
+
+// Making the same program using User inputs in html textbox
+
+// document.getElementById("rollButton").onclick = function (){
+//     let x = Math.floor(Math.random()*6) +1;
+//     let y = Math.floor(Math.random()*6) +1;
+//     let z = Math.floor(Math.random()*6) +1;
+
+//     document.getElementById("xlabel").innerHTML =x;
+//     document.getElementById("ylabel").innerHTML =y;
+//     document.getElementById("zlabel").innerHTML =z;
+// }
+
+// 50:54
