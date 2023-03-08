@@ -123,17 +123,62 @@
 
 // console.log(`Happy Birthday! You are ${age} years old`)
 
-let x;
-let y ;
-let z;
+// let x;
+// let y ;
+// let z;
 
-x = Number("3.14");
-console.log(x, typeof x);
+// x = Number("3.14");
+// console.log(x, typeof x);
 
-y = String(3.14);
-console.log(y, typeof y);
+// y = String(3.14);
+// console.log(y, typeof y);
 
 
 // If you convert an empty value to boolean it will give you false but if you convert a value into boolean it will give you true
-z = Boolean("1");
-console.log(z, typeof z);
+
+// z = Boolean("1");
+// console.log(z, typeof z);
+
+
+// # Const
+// We assign variables as constant when we know the value doesn't need to be changed later
+//  It is a variable that cannot be changed later after its already declared
+
+// A naming convention for constant variables is the variable's name is in uppercase it is not necessary but it is considered a good practice
+
+// const PI = 3.14159;
+// let radius = Number(window.prompt("What is the radius of a circle"));
+// let circumference = 2*PI*radius;
+// console.log(circumference);
+
+// # Math
+// It is an intrinsic object that provides basic mathematics functionality and constants.
+
+// let x = Math.round(3.14);
+// console.log(x);
+
+// let y = Math.floor(3.14);
+// console.log(y)
+
+// let z = Math.ceil(3.14);
+// console.log(z);
+
+/*
+    There are a lot more than discussed here for that read docs
+    some basic ones are listed below:
+    Math.pow(base, exponent);
+    Math.sqrt(_name);
+    Math.abs(_name) - absolute value which means distance away from zero
+*/
+
+// let a = 5;
+// let b = 9;
+// let max = Math.max(a,b);
+// let min = Math.min(a,b);
+// console.log(max);
+// console.log(min);
+
+//  We can give the value of pi by using Math.PI;
+
+// let p = Math.PI;
+// console.log(p);
