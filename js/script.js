@@ -258,4 +258,23 @@
 //     document.getElementById("zlabel").innerHTML =z;
 // }
 
-// 50:54
+
+// # Useful String Properties and Methods
+
+// The .length property gives the length of the value 
+// We can get the character at a given index
+// .charAt(_indexno);
+// In computer programming index start from zero
+// We can find the index of first occurence of the letter- which shows the index of the selected letter
+
+
+let userName = "John Wicko";
+
+console.log(userName.length);
+console.log(userName.charAt(2));
+
+console.log(userName.indexOf("o"));
+console.log(userName.lastIndexOf("o"));
+
+
+// 53:06
