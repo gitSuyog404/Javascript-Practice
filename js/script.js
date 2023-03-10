@@ -571,3 +571,29 @@
 // } else {
 //   console.log("It's SUNNY outside");
 // }
+
+// # While Loops
+//  It is like an if statement but it repeats some code
+// while some condition is true the code is repeated
+//  Potentially repeat infinite amount of times
+// First condition is checked then the code is executed
+
+// let userName = "";
+
+// while (userName == "" || userName == null) {
+//   userName = window.prompt("Enter your name");
+// }
+// console.log("Hello", userName);
+
+// # do while loop
+//  do something then check the condition, repeat if the condition is true
+//  First the code is executed at least once then the condition is checked and if the condition is true then the code will run again
+// 1:26:35
+
+// let userName;
+// do {
+//   userName = window.prompt("Enter your name");
+// } while (userName == "");
+// {
+//   console.log(`Hello ${userName}`);
+// }
