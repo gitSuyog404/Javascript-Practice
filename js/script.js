@@ -266,15 +266,37 @@
 // .charAt(_indexno);
 // In computer programming index start from zero
 // We can find the index of first occurence of the letter- which shows the index of the selected letter
+// To remove the unnecessary white space we can use .trim();
+// To make it uppercase we can use .toUpperCase();
+// To make it lowercase we can use .toLowerCase();
+// we can replace things by using .replaceAll("_character we would like to replace","what will replace the selected words");
 
+// let phoneNumber = "123-345-567";
+// let userName = "   John Wicko   ";
 
-let userName = "John Wicko";
+// console.log(userName.length);
+// console.log(userName.charAt(2));
 
-console.log(userName.length);
-console.log(userName.charAt(2));
-
-console.log(userName.indexOf("o"));
-console.log(userName.lastIndexOf("o"));
-
+// console.log(userName.indexOf("o"));
+// console.log(userName.lastIndexOf("o"));
+// console.log(userName.trim());
 
 // 53:06
+
+// # Slice method
+// Extracts a section of a string and returns it as a new string, without modifying the original string
+// .slice(starting index of the word, ending index of the word)
+// If you dont give the ending index then it will copy everything after the starting index
+
+let fullName = "John Wick";
+// let lastName = fullName.slice(6);
+// Or you can do this
+// the + 1 means everything after " " to get rid of the white space
+
+// The two indices are to define that 0- starts from the first and it ends at the first " ".
+let firstName = fullName.slice(0, fullName.indexOf(" "));
+
+
+let lastName = fullName.slice(fullName.indexOf(" ") + 1);
+console.log(firstName);
+console.log(lastName);
