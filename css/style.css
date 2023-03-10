@@ -4,6 +4,10 @@
     
 }
 
+body{
+    background: black;
+}
+
 /* #countLabel{
     display: block;
     text-align: center;

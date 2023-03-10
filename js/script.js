@@ -8,7 +8,6 @@
 
 // #Comments : // /* */
 
-
 // Variables
 // Container for storing data
 // 1.Declaration (var, let , const)
@@ -24,14 +23,14 @@
 //  console.log("You are", age, "years old");
 //  console.log( "Enrolled:", student);
 
-// We can change inner Html by using 
+// We can change inner Html by using
 //  document.getElementById("_id").innerHTML = "Hello " + firstName
 
 // document.getElementById("p1").innerHTML = "Hello " + firstName;
 // document.getElementById("p2").innerHTML = "You are " + age +" years old.";
 // document.getElementById("p3").innerHTML = "Enrolled: " + student;
 
-// 14:27 
+// 14:27
 
 //  # Arithmetic Expressions
 /*
@@ -56,8 +55,7 @@
 //  let extraStudents = students % 3;
 //  console.log(extraStudents);
 
-
-//  # augmented assignment operators 
+//  # augmented assignment operators
 // Can be used if you are reassigning the same variable
 /*
     +=
@@ -83,7 +81,6 @@
 // let result =  1+2* (3+4);
 // console.log(result);
 
-
 // # Accepting user inputs
 // Easy way with a window prompt
 //  Difficult way using Html Textbox
@@ -102,7 +99,6 @@
 //     document.getElementById("myLabel").innerHTML = `Hello ${userInput} !!!`;
 
 // }
-
 
 // # Datatype conversion
 //  You can use these constructors to change the datatype
@@ -133,12 +129,10 @@
 // y = String(3.14);
 // console.log(y, typeof y);
 
-
 // If you convert an empty value to boolean it will give you false but if you convert a value into boolean it will give you true
 
 // z = Boolean("1");
 // console.log(z, typeof z);
-
 
 // # Const
 // We assign variables as constant when we know the value doesn't need to be changed later
@@ -183,7 +177,6 @@
 // let p = Math.PI;
 // console.log(p);
 
-
 // # Creating a Hypotenuse calculating practice program
 
 // 1. Basic one
@@ -201,9 +194,8 @@
 // let c = Math.sqrt(Math.pow(a,2)+ Math.pow(b,2));
 // console.log(`Side C: ${c}`);
 
-// Making a little more advanced version of this same program 
+// Making a little more advanced version of this same program
 // By accepting user inputs using Html Textboxes
-
 
 // document.getElementById("submitbtn").onclick = function(){
 //     let a = Number(document.getElementById("atxtbox").value);
@@ -214,7 +206,6 @@
 
 //     document.getElementById("cLabel").innerHTML = `Side C: ${c};`
 // }
-
 
 // # Creating a simple counter program
 
@@ -234,7 +225,6 @@
 //     document.getElementById("countLabel").innerHTML = count;
 
 // };
-
 
 // # Creating a random number generator
 
@@ -258,10 +248,9 @@
 //     document.getElementById("zlabel").innerHTML =z;
 // }
 
-
 // # Useful String Properties and Methods
 
-// The .length property gives the length of the value 
+// The .length property gives the length of the value
 // We can get the character at a given index
 // .charAt(_indexno);
 // In computer programming index start from zero
@@ -296,11 +285,9 @@
 // The two indices are to define that 0- starts from the first and it ends at the first " ".
 // let firstName = fullName.slice(0, fullName.indexOf(" "));
 
-
 // let lastName = fullName.slice(fullName.indexOf(" ") + 1);
 // console.log(firstName);
 // console.log(lastName);
-
 
 // # Method Chaining
 //  Calling one method after another in one continuous line of code
@@ -314,14 +301,12 @@
 
 // let letter = userName.charAt(0).toUpperCase().trim();
 
-
-// # if statement 
+// # if statement
 // a basic form of decision making if a condition is true,then do something, if not then don't do it!
 // 1:01:14
 
 // The code executes from the top to bottom
 //  The order of the if ,else if, else statement matters
-
 
 // let age = Number(prompt("What is the you age"));
 
@@ -361,9 +346,6 @@
 //     const mastercardBtn = document.getElementById("mastercardBtn");
 //     const paypalBtn = document.getElementById("paypalBtn");
 
-
-
-
 //     if (myCheckBox.checked == true){
 //         console.log("You liked the website");
 //     }
@@ -371,7 +353,6 @@
 //     else{
 //         console.log("You haven't liked this website yet");
 //     }
-
 
 //     if(visaBtn.checked == true){
 //         console.log("You are paying with a Visa card");
@@ -389,3 +370,125 @@
 //         console.log("You must select a payment method");
 //     }
 // }
+
+// # Switch Case
+// Statement that explains a value for a match against many case clauses and it is more efficient than many "else if" statements
+// It is normally not a good practice to use a lot of else if statements so it is better to use switch in those cases
+
+// let grade = prompt("What is the grade?");
+
+// if(grade == "A+"){
+//     console.log("Excellent Work");
+// }
+// else if(grade == "A"){
+//     console.log("Great");
+// }
+// else if(grade == "B+"){
+//     console.log("Good but you can do better");
+// }
+// else if(grade == "B"){
+//     console.log("You did good");
+// }
+// else if(grade == "C+"){
+//     console.log("Nice");
+// }
+// else if(grade == "C"){
+//     console.log("You did okay");
+// }
+// else if(grade == "D+"){
+//     console.log("Acceptable");
+// }
+// else if(grade == "D"){
+//     console.log("You have barely passed");
+// }
+// else if(grade == "F"){
+//     console.log("You Failed miserably");
+// }
+
+// else{
+//     console.log("NG");
+// }
+
+// ! Creating the same program using switches
+
+// let grade = prompt("What is the grade?");
+
+// switch (grade) {
+//   case "A+":
+//     console.log("Excellent Work");
+//     break;
+
+//   case "A":
+//     console.log("Great");
+//     break;
+
+//   case "B+":
+//     console.log("Good but you can improve");
+//     break;
+
+//   case "B":
+//     console.log("Good but you can do better");
+//     break;
+
+//   case "C+":
+//     console.log("Sufficient");
+//     break;
+
+//   case "C":
+//     console.log("You did okay but need improvements");
+//     break;
+
+//   case "D+":
+//     console.log(" Acceptable");
+//     break;
+
+//   case "D":
+//     console.log("You need to study alot");
+//     break;
+
+//   case "E":
+//     console.log("You failed miserably");
+//     break;
+// If there is no matching cases you can add default:
+//   default:
+//     console.log("NG");
+//     break;
+// }
+
+// ! You can use conditions in switches
+
+let grade = Number(prompt("What is the grade?"));
+
+switch (true) {
+  case grade >= 90:
+    console.log("A+");
+    break;
+
+  case grade >= 80:
+    console.log("A");
+    break;
+
+  case grade >= 70:
+    console.log("B+");
+    break;
+
+  case grade >= 60:
+    console.log("B");
+    break;
+
+  case grade >= 50:
+    console.log("C");
+    break;
+
+  case grade >= 40:
+    console.log("D+");
+    break;
+
+  case grade >= 30:
+    console.log("D");
+    break;
+
+  default:
+    console.log("NG");
+    break;
+}
