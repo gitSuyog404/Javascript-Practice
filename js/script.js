@@ -457,38 +457,75 @@
 
 // ! You can use conditions in switches
 
-let grade = Number(prompt("What is the grade?"));
+// let grade = Number(prompt("What is the grade?"));
 
-switch (true) {
-  case grade >= 90:
-    console.log("A+");
-    break;
+// switch (true) {
+//   case grade >= 90:
+//     console.log("A+");
+//     break;
 
-  case grade >= 80:
-    console.log("A");
-    break;
+//   case grade >= 80:
+//     console.log("A");
+//     break;
 
-  case grade >= 70:
-    console.log("B+");
-    break;
+//   case grade >= 70:
+//     console.log("B+");
+//     break;
 
-  case grade >= 60:
-    console.log("B");
-    break;
+//   case grade >= 60:
+//     console.log("B");
+//     break;
 
-  case grade >= 50:
-    console.log("C");
-    break;
+//   case grade >= 50:
+//     console.log("C");
+//     break;
 
-  case grade >= 40:
-    console.log("D+");
-    break;
+//   case grade >= 40:
+//     console.log("D+");
+//     break;
 
-  case grade >= 30:
-    console.log("D");
-    break;
+//   case grade >= 30:
+//     console.log("D");
+//     break;
 
-  default:
-    console.log("NG");
-    break;
-}
+//   default:
+//     console.log("NG");
+//     break;
+// }
+
+// 1:16:23
+
+// # AND OR logical operators
+// Gives us the ability to check more than 1 condition concurrently
+//  && AND (Both conditions must be true)
+//  || OR (Either condition can be true)
+
+// We can add more than one logical operator
+
+// let temp = Number(prompt("What is the temperature ?"));
+
+// if (temp > 0 && temp < 30) {
+//   console.log("The temperature is optimal");
+// } else {
+//   console.log("The temperature is not optimal");
+// }
+
+// OR example:
+
+// let temp = Number(prompt("What is the temperature ?"));
+
+// if (temp <= 0 || temp >= 30) {
+//   console.log("The weather is bad!");
+// } else {
+//   console.log("The weather is good");
+// }
+
+// let temp = Number(prompt("What is the temperature"));
+
+// let sunny = true;
+// If you are working with a boolean value then you dont need to give == true or false you can just give the value which in this case is sunny
+// if (temp > 0 && temp < 30 && sunny) {
+//   console.log("The weather is good");
+// } else {
+//   console.log("The weather is BAD");
+// }
