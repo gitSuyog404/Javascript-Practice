@@ -529,3 +529,45 @@
 // } else {
 //   console.log("The weather is BAD");
 // }
+
+// # Not Logical Operator (!)
+// typically used to reverse a condition's boolean value
+//  true -> false and false -> true
+
+// let temp = Number(prompt("What is the temperature?"));
+
+// if (temp > 0) {
+//   console.log("Its warm outside");
+// } else {
+//   console.log("It's cold outside");
+// }
+
+// Making the same condition using not operator(!)
+
+// let temp = Number(prompt("What is the temperature"));
+
+// if (!(temp > 0)) {
+//   console.log("It's COLD outside");
+// } else {
+//   console.log("It's a warm outside");
+// }
+
+// # Using Not Operator with boolean values
+// It's not necessary to surround with ! ()
+//  the brackets are optional
+
+// let sunny = true;
+
+// if (sunny) {
+//   console.log("It's sunny outside");
+// } else {
+//   console.log("It's cloudy outside");
+// }
+
+// let sunny = true;
+
+// if (!sunny) {
+//   console.log("It's CLOUDY outside");
+// } else {
+//   console.log("It's SUNNY outside");
+// }
