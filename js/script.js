@@ -288,15 +288,104 @@
 // .slice(starting index of the word, ending index of the word)
 // If you dont give the ending index then it will copy everything after the starting index
 
-let fullName = "John Wick";
+// let fullName = "John Wick";
 // let lastName = fullName.slice(6);
 // Or you can do this
 // the + 1 means everything after " " to get rid of the white space
 
 // The two indices are to define that 0- starts from the first and it ends at the first " ".
-let firstName = fullName.slice(0, fullName.indexOf(" "));
+// let firstName = fullName.slice(0, fullName.indexOf(" "));
 
 
-let lastName = fullName.slice(fullName.indexOf(" ") + 1);
-console.log(firstName);
-console.log(lastName);
+// let lastName = fullName.slice(fullName.indexOf(" ") + 1);
+// console.log(firstName);
+// console.log(lastName);
+
+
+// # Method Chaining
+//  Calling one method after another in one continuous line of code
+//  we can just write .method.method.method.method continously
+
+// let userName = "wick";
+// let letter = userName.charAt(0);
+// letter = letter.toUpperCase();
+
+// To this in a better way we can use method chaining
+
+// let letter = userName.charAt(0).toUpperCase().trim();
+
+
+// # if statement 
+// a basic form of decision making if a condition is true,then do something, if not then don't do it!
+// 1:01:14
+
+// The code executes from the top to bottom
+//  The order of the if ,else if, else statement matters
+
+
+// let age = Number(prompt("What is the you age"));
+
+// if(age>=18){
+//     console.log("You are an adult !!!");
+
+// }
+// else if(age >=13){
+//     console.log("You are a teenager");
+
+// }
+// else{
+//     console.log("You are still a Child !!!");
+// }
+
+// Checking boolean value it is really easy with if statements
+
+// let online = true;
+// if(online){
+//     console.log("You are Online!");
+// }
+
+// else{
+//     console.log("You are Offline!");
+// }
+
+// # Checked Property
+// Let us know if a radio or checkbox is selected
+// Asking the checked property will give us a boolean value true or false
+
+// .checked
+
+// The ==true is optional
+// document.getElementById("submitBtn").onclick = function(){
+//     const myCheckBox = document.getElementById("_checkBox");
+//     const visaBtn = document.getElementById("visaBtn");
+//     const mastercardBtn = document.getElementById("mastercardBtn");
+//     const paypalBtn = document.getElementById("paypalBtn");
+
+
+
+
+//     if (myCheckBox.checked == true){
+//         console.log("You liked the website");
+//     }
+
+//     else{
+//         console.log("You haven't liked this website yet");
+//     }
+
+
+//     if(visaBtn.checked == true){
+//         console.log("You are paying with a Visa card");
+//     }
+
+//     else if(mastercardBtn.checked==true){
+//         console.log("You are paying with a Master Card");
+//     }
+
+//     else if(paypalBtn.checked == true){
+//         console.log("You are paying with Paypal");
+//     }
+
+//     else{
+//         console.log("You must select a payment method");
+//     }
+// }
