@@ -635,13 +635,33 @@
 // }
 
 // Drawing a rectangle using nested loops
-let symbol = window.prompt("Enter a symbol to use");
-let rows = window.prompt("Enter no of rows");
-let columns = window.prompt("Enter no of columns");
+// let symbol = window.prompt("Enter a symbol to use");
+// let rows = window.prompt("Enter no of rows");
+// let columns = window.prompt("Enter no of columns");
 
-for (let i = 1; i <= rows; i += 1) {
-  for (let j = 1; j <= columns; j += 1) {
-    document.getElementById("myRectangle").innerHTML += symbol;
-  }
-  document.getElementById("myRectangle").innerHTML += "<br>";
+// for (let i = 1; i <= rows; i += 1) {
+//   for (let j = 1; j <= columns; j += 1) {
+//     document.getElementById("myRectangle").innerHTML += symbol;
+//   }
+//   document.getElementById("myRectangle").innerHTML += "<br>";
+// }
+
+// # Functions
+// Define code once, and use it many times.
+//  To perform some code, call the function name.
+// Functions have access to global variables
+// it has access to variables out of the function but it doesn't recognize variables with let keyword as it only exists within the {}
+// Arguments are passed while calling the function
+//  Parameters are assigned while creating the function
+// The parameters dont have need to have the same names as the arguments you can change it while creating the function but you need to have the order of the arguments and parameters correct
+// For example you cannot write (1,2) in arguments and (2,1) while creating the function and assigning the respective parameters within the code inside the function the values  must be in order
+
+function happyBirthday() {
+  console.log("Happy Birthday to you!");
+  console.log("Happy Birthday to you!");
+  console.log("Happy Birthday dear ____");
+  console.log("Happy Birthday to you!");
+  console.log("You are ___ years old!");
 }
+
+happyBirthday();
