@@ -604,7 +604,22 @@
 //  Repeat some code a certain amount of times
 // You tend to use for loops when you want to repeat the code a limited amount of times
 
-for (i = 0; i <= 10; i += 1) {
+// for (i = 0; i <= 10; i += 1) {
+//   console.log(i);
+// }
+// console.log("Hello World!");
+
+// # break and continue statements
+// break - breaks out of a loop entirely
+// continue - skip an iteration of a loop
+
+for (let i = 0; i <= 20; i += 1) {
+  //   if (i == 13) {
+  //     break;
+  //   }
+
+  if (i == 13) {
+    continue;
+  }
   console.log(i);
 }
-console.log("Hello World!");
