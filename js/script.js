@@ -597,3 +597,14 @@
 // {
 //   console.log(`Hello ${userName}`);
 // }
+
+// 1:28:38
+
+// # for loop
+//  Repeat some code a certain amount of times
+// You tend to use for loops when you want to repeat the code a limited amount of times
+
+for (i = 0; i <= 10; i += 1) {
+  console.log(i);
+}
+console.log("Hello World!");
