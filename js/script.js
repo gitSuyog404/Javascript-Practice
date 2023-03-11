@@ -656,12 +656,27 @@
 // The parameters dont have need to have the same names as the arguments you can change it while creating the function but you need to have the order of the arguments and parameters correct
 // For example you cannot write (1,2) in arguments and (2,1) while creating the function and assigning the respective parameters within the code inside the function the values  must be in order
 
-function happyBirthday() {
-  console.log("Happy Birthday to you!");
-  console.log("Happy Birthday to you!");
-  console.log("Happy Birthday dear ____");
-  console.log("Happy Birthday to you!");
-  console.log("You are ___ years old!");
-}
+// function happyBirthday() {
+//   console.log("Happy Birthday to you!");
+//   console.log("Happy Birthday to you!");
+//   console.log("Happy Birthday dear ____");
+//   console.log("Happy Birthday to you!");
+//   console.log("You are ___ years old!");
+// }
 
-happyBirthday();
+// happyBirthday();
+
+// # return statement
+//  returns a value back to the place where you invoked a function
+// returns the value to the arguments
+
+let width = Number(window.prompt("Enter the value of width"));
+let height = Number(window.prompt("Enter the value of height"));
+
+let area = getArea(width, height);
+
+function getArea(width, height) {
+  let result = width * height;
+  return result;
+}
+console.log(area);
