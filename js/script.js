@@ -937,3 +937,32 @@
 //     console.log(food);
 //   }
 // }
+
+// Spread Operator
+//  Allows an iterable such as an array or string to be expanded in places where zero or more arguments are expected (unpacks the elements) into individual arguments
+
+// By preceding the _name with ... you unpack the elements
+// Syntax -     ...
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// console.log(...numbers);
+
+// let userName = "John Wick";
+// console.log(...userName);
+
+// If you just do this it will give you an error so
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let max = Math.max(numbers);
+// console.log(max);
+
+// Using spread operator you can solve this error
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let max = Math.max(...numbers);
+// console.log(max);
+
+// let class1 = ["Spongebob", "Patrick", "Ben10"];
+// let class2 = ["Squidward", "Mr.Krabs", "Plankton"];
+
+// class1.push(...class2);
+// console.log(class1);
+// console.log(...class1);
