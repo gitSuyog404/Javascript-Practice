@@ -915,3 +915,25 @@
 // for (let fruit of fruits) {
 //   console.log(fruit);
 // }
+
+// # 2D Array
+// An array of arrays
+// also known as multi dimensional arrays
+
+// let fruits = ["Apples", "Oranges", "Grapes"];
+// let vegetables = ["Carrots", "Potatoes", "Onions"];
+// let meats = ["Eggs", "Chicken", "Fish"];
+
+// let groceryList = [fruits, vegetables, meats];
+
+// To access the values inside 2D arrays
+// We use groceryList [][]
+//  The first brackets are for rows and the second brackets are for columns
+
+// groceryList[2][2] = "steak";
+// Using nested for loops
+// for (let grocery of groceryList) {
+//   for (let food of grocery) {
+//     console.log(food);
+//   }
+// }
