@@ -613,13 +613,35 @@
 // break - breaks out of a loop entirely
 // continue - skip an iteration of a loop
 
-for (let i = 0; i <= 20; i += 1) {
-  //   if (i == 13) {
-  //     break;
-  //   }
+// for (let i = 0; i <= 20; i += 1) {
+//   if (i == 13) {
+//     break;
+//   }
 
-  if (i == 13) {
-    continue;
+//   if (i == 13) {
+//     continue;
+//   }
+//   console.log(i);
+// }
+
+// # Nested loop
+//  a loop inside of another loop
+// First the inner loop executes and after that one iteration of the outer loop is completed
+
+// for (let i = 1; i <= 3; i += 1) {
+//   for (let j = 1; j <= 3; j += 1) {
+//     console.log(j);
+//   }
+// }
+
+// Drawing a rectangle using nested loops
+let symbol = window.prompt("Enter a symbol to use");
+let rows = window.prompt("Enter no of rows");
+let columns = window.prompt("Enter no of columns");
+
+for (let i = 1; i <= rows; i += 1) {
+  for (let j = 1; j <= columns; j += 1) {
+    document.getElementById("myRectangle").innerHTML += symbol;
   }
-  console.log(i);
+  document.getElementById("myRectangle").innerHTML += "<br>";
 }
