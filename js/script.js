@@ -838,3 +838,44 @@
 // function toFahreinheit(temp) {
 //   return (temp * 9) / 5 + 32;
 // }
+
+// 2:15:52
+
+// # Arrays
+// Think of Arrays as a variable that can store multiple values
+
+let fruits = ["🍏", "🥭", "🍊", "🍐"];
+// console.log(fruits);
+// console.log(fruits[0]);
+
+// We can also update and change the elements of the array
+
+// fruits[0] = "coconut";
+// console.log(fruits);
+
+// You can use the .push method to add items to an array
+
+// fruits.push("🍇");
+// console.log(fruits);
+
+// To remove the last element
+// fruits.push("🍇");
+// fruits.pop();
+// console.log(fruits);
+
+// To add element to the beginning
+// fruits.unshift("Kiwi");
+// console.log(fruits);
+
+// To remove the first element
+// fruits.shift();
+// console.log(fruits);
+
+// You can see the length of the array by:
+// let length = fruits.length;
+// console.log(length);
+
+// To find the index of element
+
+// let index = fruits.indexOf("🍏");
+// console.log(index);
