@@ -738,3 +738,17 @@
 // Global variable = is declared outside any function
 // If a variable declared with var is global then it will change browser's window properties
 // so use let or const to declare global variables
+// That is why it is considered a good practice to use let instead of var
+
+// # Template literals
+//  declared with Back ticks [ `` ]  instead of single quotes or double quotes
+// It allows us to embed variables and expressions
+
+// let userName = "Wick";
+// let items = 3;
+// let total = 75;
+
+// let answer = `${userName} just bought ${items} items and it cost him a total of ${total}`;
+
+// document.getElementById("myLabel").innerHTML = answer;
+// console.log(answer);
