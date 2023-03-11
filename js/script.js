@@ -752,3 +752,89 @@
 
 // document.getElementById("myLabel").innerHTML = answer;
 // console.log(answer);
+
+// # Format Currency
+// It is a built in method for number
+// toLocaleString()
+//  returns a string with a language sensitive representation of this number
+
+//  number.toLocaleString(locale, {options});
+// 'locale' = specify that language (undefined = default set in browser)
+//  'options' = object with formatting options
+
+// let myNum = 1234567.89;
+// myNum = myNum.toLocaleString("en-US"); // Us English
+// console.log(myNum);
+
+// myNum = myNum.toLocaleString("hi-IN");  Hindi
+// console.log(myNum);
+
+// myNum = myNum.toLocaleString("de-DE"); Standard German
+// console.log(myNum);
+
+// using options
+// myNum = myNum.toLocaleString("en-US", { style: "currency", currency: "USD" });
+// console.log(myNum);
+
+// myNum = myNum.toLocaleString("hi-IN", { style: "currency", currency: "INR" });
+// console.log(myNum);
+
+// myNum = myNum.toLocaleString("de-DE", { style: "currency", currency: "EUR" });
+// console.log(myNum);
+
+// Percentage
+// let myNum = 100;
+// myNum = myNum.toLocaleString(undefined, { style: "percent" });
+// console.log(myNum);
+
+// Units
+// let myNum = 100;
+// myNum = myNum.toLocaleString(undefined, { style: "unit", unit: "celsius" });
+// console.log(myNum);
+
+// # Creating a basic number guessing game in Javascript
+
+// const answer = Math.floor(Math.random() * 10 + 1);
+// let guesses = 0;
+
+// document.getElementById("submitBtn").onclick = function () {
+//   let guess = document.getElementById("guessField").value;
+//   guesses += 1;
+
+//   if (guess == answer) {
+//     alert(
+//       `${answer} is the Number. It took you ${guesses} guesses to complete`
+//     );
+//   } else if (guess < answer) {
+//     alert("Too small!");
+//   } else {
+//     alert("Too large");
+//   }
+// };
+
+// # Temperature conversion program 🌡️
+
+// document.getElementById("submitBtn").onclick = function () {
+//   let temp;
+//   if (document.getElementById("cButton").checked == true) {
+//     temp = document.getElementById("textBox").value;
+//     temp = Number(temp);
+//     temp = toCelsius(temp);
+//     document.getElementById("tempLabel").innerHTML = `${temp}℃ `;
+//   } else if (document.getElementById("fButton").checked == true) {
+//     temp = document.getElementById("textBox").value;
+//     temp = Number(temp);
+//     temp = toFahreinheit(temp);
+//     document.getElementById("tempLabel").innerHTML = `${temp}℉`;
+//   } else {
+//     document.getElementById("tempLabel").innerHTML = "Select a Unit";
+//   }
+// };
+
+// function toCelsius(temp) {
+//   return (temp - 32) * (5 / 9);
+// }
+
+// function toFahreinheit(temp) {
+//   return (temp * 9) / 5 + 32;
+// }
