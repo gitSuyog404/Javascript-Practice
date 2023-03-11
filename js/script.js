@@ -670,13 +670,46 @@
 //  returns a value back to the place where you invoked a function
 // returns the value to the arguments
 
-let width = Number(window.prompt("Enter the value of width"));
-let height = Number(window.prompt("Enter the value of height"));
+// let width = Number(window.prompt("Enter the value of width"));
+// let height = Number(window.prompt("Enter the value of height"));
 
-let area = getArea(width, height);
+// let area = getArea(width, height);
 
-function getArea(width, height) {
-  let result = width * height;
-  return result;
-}
-console.log(area);
+// function getArea(width, height) {
+//   let result = width * height;
+//   return result;
+// }
+// console.log(area);
+
+// # Ternary Operator
+//  Shortcut for an 'if/else statement' - takes 3 operands:
+// 1. a condition with ?
+// 2. expression if True:
+// 3. expression if False
+// syntax :
+//  condition ? expressionIfTrue : expressionIfFalse
+
+// Example:
+
+// let adult = checkAge(21);
+// function checkAge(age) {
+//   if (age >= 18) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(adult);
+
+// Making the same example with ternary operators
+// let adult = checkAge(21);
+// function checkAge(age) {
+//   return age >= 18 ? true : false;
+// }
+// console.log(adult);
+
+// function checkWinner(win) {
+//   win ? console.log("You win") : console.log("You lose");
+// }
+
+// checkWinner(true);
