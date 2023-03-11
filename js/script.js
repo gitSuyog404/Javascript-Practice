@@ -879,3 +879,25 @@ let fruits = ["🍏", "🥭", "🍊", "🍐"];
 
 // let index = fruits.indexOf("🍏");
 // console.log(index);
+
+// # Loop through an array
+// let prices = [5, 10, 15, 20, 25];
+
+// using standart for loop
+
+// for (let i = 0; i < prices.length; i += 1) {
+//   console.log(prices[i]);
+// }
+
+// To reverse this process
+// for (let i = prices.length - 1; i >= 0; i -= 1) {
+//   console.log(prices[i]);
+// }
+
+// ! Using for of statements
+
+let prices = [5, 10, 15, 20, 25];
+
+for (let price of prices) {
+  console.log(price);
+}
