@@ -713,3 +713,28 @@
 // }
 
 // checkWinner(true);
+
+// # var vs let
+//  Variable scope = where a variable is accessible
+
+//  let = variables are limited to block scope {}
+//  var = variables are limited to a function(){}
+// if var is declared inside a function it cannot exist out of that function
+
+// Examples
+// let
+// for (let i = 1; i <= 3; i += 1) {
+//   console.log(i);
+// }
+// console.log(i);
+
+// var
+// function Something() {
+//   for (var i = 1; i <= 3; i += 1) {}
+// }
+
+// console.log(i);
+
+// Global variable = is declared outside any function
+// If a variable declared with var is global then it will change browser's window properties
+// so use let or const to declare global variables
