@@ -844,7 +844,7 @@
 // # Arrays
 // Think of Arrays as a variable that can store multiple values
 
-let fruits = ["🍏", "🥭", "🍊", "🍐"];
+// let fruits = ["🍏", "🥭", "🍊", "🍐"];
 // console.log(fruits);
 // console.log(fruits[0]);
 
@@ -896,8 +896,22 @@ let fruits = ["🍏", "🥭", "🍊", "🍐"];
 
 // ! Using for of statements
 
-let prices = [5, 10, 15, 20, 25];
+// let prices = [5, 10, 15, 20, 25];
 
-for (let price of prices) {
-  console.log(price);
-}
+// for (let price of prices) {
+//   console.log(price);
+// }
+
+// # Sort an array of strings
+// We use the sort method
+// It arranges in alphabetical order
+
+// let fruits = ["Apple", "Mango", "Orange", "Pear"];
+// fruits = fruits.sort();
+// To do the opposite
+// reverse alphabetical order
+// fruits = fruits.sort().reverse();
+
+// for (let fruit of fruits) {
+//   console.log(fruit);
+// }
