@@ -1324,3 +1324,48 @@
 // console.log(cards);
 // OR
 // cards.forEach((card) => console.log(card));
+
+// # Nested Functions
+// It is a function inside other functions.
+// Outer functions have access to inner functions
+// Inner functions are hidden from outside the Outer Functions
+// They add data security and are used in closures
+
+// The problem in this one is that i dont need to login to access those messages i can directly call the functions to show the messages
+// let userName = "Wick";
+// let userInbox = 0;
+
+// function login() {
+//   displayUserName();
+//   displayUserInbox();
+// }
+
+// function displayUserName() {
+//   console.log(`Welcome ${userName}`);
+// }
+
+// function displayUserInbox() {
+//   console.log(`You have ${userInbox} new messages`);
+// }
+
+// login();
+
+// To add data security
+
+// let userName = "Wick";
+// let userInbox = 0;
+
+// function login() {
+//   function displayUserName() {
+//     console.log(`Welcome ${userName}`);
+//   }
+
+//   function displayUserInbox() {
+//     console.log(`You have ${userInbox} new messages`);
+//   }
+
+//   displayUserName();
+//   displayUserInbox();
+// }
+
+// login();
