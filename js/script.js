@@ -1017,6 +1017,7 @@
 // It helps us develop asynchronous code.
 // (When one function has to wait for another function) that helps us avoid errors and potential problems.
 // Example. Wait for a file to load.
+// While passing the name of the function do not add the () as it will call the function.
 
 // Example
 
@@ -1071,3 +1072,31 @@
 // }
 
 // sum(2, 3, displayDOM);
+
+// # array.forEach()  method:
+// It executes a provided callback function once for each array element
+
+let students = ["john", "wick", "bruce", "wayne"];
+
+// Making a function that will capitalize the first letter of these words
+
+// With array.forEach() there are 3 arguments that are provided automatically behind the scenes that we have access to.
+//  function _funcname (element,index,array){}
+// We dont necessarily have to use this, but it is automaticaly provided
+// You can rename those arguments as well
+// But the default is descriptive and it will be easier to understand.
+
+// To use .forEach(); -  _Arrayname.forEach();
+// Then we pass in a callback as an argument
+// Even if you do assign the name of the function dont write () as it will call the function.
+
+// function Capitalize(element, index, array) {
+//   array[index] = element[0].toUpperCase() + element.substring(1); // This will select the first character of every string
+// }
+
+// function print(element) {
+//   console.log(element);
+// }
+
+// students.forEach(Capitalize);
+// students.forEach(print);
