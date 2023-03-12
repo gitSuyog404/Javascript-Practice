@@ -1195,3 +1195,52 @@
 
 // grades = grades.sort(ascend);
 // grades.forEach(print);
+
+// # Function Expressions (Anonymous function)
+// It is a function without a name (anonymous function) which helps us avoid polluting the global scope with names.
+// We can just write it and forget about it.
+//  To invoke a anonymous function we write the variable name and add ()
+//  _variablename();
+
+// function sayHello() {
+//   console.log("HELLO JAVASCRIPT");
+// }
+
+// sayHello();
+
+// Making this same function in function expressions.
+
+// const greeting = function () {
+//   console.log("Hello Javascript");
+// };
+
+// greeting();
+
+// ! Creating a Counter
+
+// let count = 0;
+// function increaseCount() {
+//   count += 1;
+//   document.getElementById("myLabel").innerHTML = count;
+// }
+
+// function decreaseCount() {
+//   count -= 1;
+//   document.getElementById("myLabel").innerHTML = count;
+// }
+
+// There is an onclick event attribute in html
+// onclick = "_functionname()"
+
+// ! Creating the same Counter program using anonymous functions
+
+// let count = 0;
+// document.getElementById("increase").onclick = function () {
+//   count += 1;
+//   document.getElementById("myLabel").innerHTML = count;
+// };
+
+// document.getElementById("decrease").onclick = function () {
+//   count -= 1;
+//   document.getElementById("myLabel").innerHTML = count;
+// };
