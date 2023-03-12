@@ -1369,3 +1369,34 @@
 // }
 
 // login();
+
+// # Maps
+// It is an object that holds key value pairs of any datatype
+
+// const store = new Map([
+//   ["t-shirt", 20],
+//   ["Jeans", 30],
+//   ["Socks", 10],
+//   ["Underwear", 100],
+// ]);
+
+// store.forEach((value, key) => console.log(`${key} $${value}`));
+
+// let shoppingCart = 0;
+// We can get the pairs using .get() method
+// shoppingCart += store.get("t-shirt");
+// shoppingCart += store.get("Underwear");
+
+// We can add a pair to our map using .set() method
+// store.set("hat", 500);
+
+// To delete a pair
+// store.delete("_key");
+
+// To check if there is a key within our map:
+// store.has("_key");
+
+// To see the size
+//  store.size -> property
+
+// console.log(store);
