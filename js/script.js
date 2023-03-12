@@ -966,3 +966,47 @@
 // class1.push(...class2);
 // console.log(class1);
 // console.log(...class1);
+
+// # Rest parameters
+// Represents an indeifinite number of parameters
+//  packs arguments into an array
+//  Syntax -       ...
+
+// Example: If we want to create a function that sums a and b or a,b,c or a,b,c,d or a,b,c,d,e then we'd have to create separate functions for each of them which is not practical so
+
+// let a = 1;
+// let b = 2;
+// let c = 3;
+// let d = 4;
+// let e = 5;
+
+// function sumFunction(a, b) {
+//   return a + b;
+// }
+// console.log(sumFunction(a, b));
+
+// function sumFunction(a, b, c) {
+//   return a + b + c;
+// }
+// console.log(sumFunction(a, b, c));
+
+// let a = 1;
+// let b = 2;
+// let c = 3;
+// let d = 4;
+// let e = 5;
+
+// function sum(...numbers) {
+//   let total = 0;
+//   for (let num of numbers) {
+//     total = +num;
+//   }
+//   return total;
+// }
+
+// Now we can use as many values as we want without having to create separate functions
+
+// console.log(sum(a, b, c));
+// console.log(sum(a, b, c, d));
+// console.log(sum(a, b, c, d, e));
+// 2:36:28
