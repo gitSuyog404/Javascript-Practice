@@ -1010,3 +1010,64 @@
 // console.log(sum(a, b, c, d));
 // console.log(sum(a, b, c, d, e));
 // 2:36:28
+
+// # Callbacks
+// A function passed as an argument to another function.
+// It ensures that a function is not going to run before a task is completed
+// It helps us develop asynchronous code.
+// (When one function has to wait for another function) that helps us avoid errors and potential problems.
+// Example. Wait for a file to load.
+
+// Example
+
+// function sum(a, b) {
+//   let result = a + b;
+//   return result;
+// }
+
+// function dispConsole(output) {
+//   console.log(output);
+// }
+
+// function dispDom(output) {
+//   document.getElementById("myLabel").innerHTML = output;
+// }
+
+// let total = sum(2, 3);
+// dispDom(total);
+
+// Another way of writing this is using a Callback
+
+// function displayConsole(output) {
+//   console.log(output);
+// }
+
+// function displayDOM(output) {
+//   document.getElementById("myLabel").innerHTML = output;
+// }
+
+// It is not necessary to name a CallBack ("callBack") you can write any name for a callback
+// function sum(x, y, callBack) {
+//   let result = x + y;
+//   callBack(result);
+// }
+
+// sum(2, 3, displayConsole);
+
+// To display in the DOM
+// function displayConsole(output) {
+//   console.log(output);
+// }
+
+// function displayDOM(output) {
+//   document.getElementById("myLabel").innerHTML = output;
+// }
+
+// It is not necessary to name a CallBack ("callBack") you can write any name for a callback
+
+// function sum(x, y, callBack) {
+//   let result = x + y;
+//   callBack(result);
+// }
+
+// sum(2, 3, displayDOM);
