@@ -1137,6 +1137,7 @@
 
 // # Array.filter() Method
 // It creates a new array with all elements that pass the test provided by a function.
+// A simple use case would be to sum up the values of an array
 
 // let ages = [18, 15, 20, 23, 17, 16, 28];
 
@@ -1150,3 +1151,15 @@
 
 // let adults = ages.filter(checkAge);
 // adults.forEach(print);
+
+// # Array.reduce()
+// It reduces an array to a single value
+
+// let prices = [5, 10, 15, 20, 25, 30, 35];
+
+// function checkOut(total, element) {
+//   return total + element;
+// }
+
+// let total = prices.reduce(checkOut);
+// console.log(`The total is : $${total}`);
