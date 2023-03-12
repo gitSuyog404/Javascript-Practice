@@ -1400,3 +1400,78 @@
 //  store.size -> property
 
 // console.log(store);
+
+// # Objects
+// A group of properties and methods
+// Properties = what an object has
+//  Methods = what an object can do
+// Methods are functions() but with a .
+//  use. to access properties/methods
+
+// const car = {
+//   model: "Mustang",
+//   color: "Black",
+//   year: 2023,
+
+//   drive: function () {
+//     console.log("You drive the car");
+//   },
+
+//   brake: function () {
+//     console.log("You step on the brakes");
+//   },
+// };
+
+// console.log(car.model);
+
+// console.log(car.color);
+// console.log(car.year);
+
+// console.log(car.drive());
+// console.log(car.brake());
+
+// const car1 = {
+//   model: "Mustang",
+//   color: "Black",
+//   year: 2023,
+
+//   drive: function () {
+//     console.log("You drive the car");
+//   },
+
+//   brake: function () {
+//     console.log("You step on the brakes");
+//   },
+// };
+
+// console.log(car1.model);
+
+// console.log(car1.color);
+// console.log(car1.year);
+
+// car1.drive();
+// car1.brake();
+
+// const car2 = {
+//   model: "Ferrari",
+//   color: "Orange",
+//   year: 2023,
+
+//   drive: function () {
+//     console.log("You drive the car");
+//   },
+
+//   brake: function () {
+//     console.log("You step on the brakes");
+//   },
+// };
+
+// console.log(car2.model);
+
+// console.log(car2.color);
+// console.log(car2.year);
+
+// car2.drive();
+// car2.brake();
+
+// 3:21:08
