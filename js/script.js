@@ -1076,7 +1076,7 @@
 // # array.forEach()  method:
 // It executes a provided callback function once for each array element
 
-let students = ["john", "wick", "bruce", "wayne"];
+// let students = ["john", "wick", "bruce", "wayne"];
 
 // Making a function that will capitalize the first letter of these words
 
@@ -1100,3 +1100,37 @@ let students = ["john", "wick", "bruce", "wayne"];
 
 // students.forEach(Capitalize);
 // students.forEach(print);
+
+// 2:45:46
+
+// # Array.map() Method:
+// It executes a provided callback function once for each array element and creates a new array
+
+// ! Square Function
+
+// let numbers = [1, 2, 3, 4, 5, 6];
+// function square(element) {
+//   return Math.pow(element, 2);
+// }
+
+// function print(element) {
+//   console.log(element);
+// }
+
+// let squareNum = numbers.map(square);
+// squareNum.forEach(print);
+
+// ! Creating a function that returns the cube of the given values
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// function cube(element) {
+//   return Math.pow(element, 3);
+// }
+
+// function print(element) {
+//   console.log(element);
+// }
+
+// let cubeNum = numbers.map(cube);
+// cubeNum.forEach(print);
