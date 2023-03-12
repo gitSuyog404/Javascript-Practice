@@ -1244,3 +1244,60 @@
 //   count -= 1;
 //   document.getElementById("myLabel").innerHTML = count;
 // };
+
+// # Arrow Function Expressions
+// A compact alternative to a traditional function expression
+//  It is represented by an =>
+// You do not need curly braces {} if your function uses only one statment
+//  But you do need curly braces {} if your function uses multiple statements
+
+// const greeting = function (userName) {
+//   console.log(`hello ${userName}`);
+// };
+
+// greeting("Wick");
+
+// Creating this same program using arrow functions
+
+// const greeting = (userName) => console.log(`Hello ${userName}`);
+// greeting("Nero");
+
+// # Calculate percentage
+
+// const percent = function (x, y) {
+//   return (x / y) * 100;
+// };
+// console.log(`The percentage is ${percent(80, 100)}%`);
+
+// const percent = (x, y) => (x / y) * 100;
+// console.log(`The percentage is ${percent(80, 100)}%`);
+
+// let grades = [100, 50, 60, 80, 70, 90, 40];
+
+// function descending(x, y) {
+//   return y - x;
+// }
+
+// function ascending(x, y) {
+//   return x - y;
+// }
+
+// function print(element) {
+//   console.log(element);
+// }
+
+// grades.sort(descending);
+// grades.forEach(print);
+
+// grades.sort(ascending);
+// grades.forEach(print);
+
+// Writing the same code using arrow functions
+
+let grades = [100, 90, 20, 40, 50, 70];
+
+grades.sort((x, y) => y - x);
+grades.forEach((element) => console.log(element));
+
+grades.sort((x, y) => x - y);
+grades.forEach((element) => console.log(element));
