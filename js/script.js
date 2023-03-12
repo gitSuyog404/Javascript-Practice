@@ -1163,3 +1163,35 @@
 
 // let total = prices.reduce(checkOut);
 // console.log(`The total is : $${total}`);
+
+// # Sort an Array of numbers.
+// array.sort();
+
+// let grades = [100, 50, 80, 60, 70, 90];
+
+// Creating a function that will return this array in descending sorting order
+
+// function descend(x, y) {
+//   return y - x;
+// }
+
+// function print(element) {
+//   console.log(element);
+// }
+// grades = grades.sort(descend);
+// grades.forEach(print);
+
+// Creating a function that will return this array in Ascending sorting order
+
+// let grades = [100, 50, 80, 60, 70, 90];
+
+// function ascend(x, y) {
+//   return x - y;
+// }
+
+// function print(element) {
+//   console.log(element);
+// }
+
+// grades = grades.sort(ascend);
+// grades.forEach(print);
