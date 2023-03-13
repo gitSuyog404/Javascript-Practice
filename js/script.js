@@ -1574,3 +1574,52 @@
 // console.log(student2.age);
 // console.log(student2.gpa);
 // student2.study();
+
+// # static Keyword
+// It belongs to the class and not the objects
+// properties: useful for caches, fixed-configuration
+// methods: useful for utility functions
+
+// class Car {
+// If you dont use static keyword each car will have its own copy of constructor so the numberofCars is shown as 1 for all 3 of them
+// If you use static keyword then instead of all the cars having its own copy the Car class itself has the only copy.
+
+//   static numberOfCars = 0;
+
+//   constructor(model) {
+//     this.model = model;
+// this.numberOfCars += 1; Instead of this after using static
+// classname.numberofCars += 1;
+//     Car.numberOfCars += 1;
+//   }
+
+//   Static methods
+
+// This is not static
+// startRace(){
+//     console.log("3...2...1... GO!");
+// }
+
+// Making it static
+//   static startRace() {
+//     console.log("3...2...1... GO!");
+//   }
+// }
+
+// const car1 = new Car("Ferrari");
+// const car2 = new Car("BMW");
+// const car3 = new Car("Mustang");
+
+// console.log(car1.numberOfCars);
+// console.log(car2.numberOfCars);
+// console.log(car3.numberOfCars);
+
+// Since none of these objects have ownership to the static variable
+// To access the static property of the numberofCars
+
+// console.log(Car.numberOfCars);
+
+// To invoke the static method
+// nameoftheclass.staticmethodname();
+
+// Car.startRace();
