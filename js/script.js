@@ -1509,3 +1509,39 @@
 // car2.drive();
 
 // If you use this outside of an object that you it will be in context of window object of the browser as it is the immediate context for this.
+
+// # Classes
+// It is a blueprint for creating objects which defines what kind of properties and methods they have and it uses a constructor for unique properties
+
+// class Player {
+//   score = 0;
+
+// When you declare a method within a class you dont necessarily need the function keyword
+//   pause() {
+//     console.log("You paused the Game");
+//   }
+
+//   exit() {
+//     console.log("You exited the Game");
+//   }
+// }
+
+// To utilize the class to create an object
+// Use the 'new' keyword
+//  objectname = new  classname();
+
+// const Player1 = new Player();
+
+// console.log(Player1.score);
+
+// Player1.pause();
+
+// Player1.exit();
+
+// You can utilize the same Class to create multiple objects
+
+// const Player2 = new Player();
+
+// console.log(Player2.score);
+// Player2.pause();
+// Player2.exit();
