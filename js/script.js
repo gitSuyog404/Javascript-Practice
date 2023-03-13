@@ -1475,3 +1475,37 @@
 // car2.brake();
 
 // 3:21:08
+
+// # this keyword
+// A reference to a particular object the object depends on the immediate context
+
+// const car1 = {
+//   model: "Mustang",
+//   color: "Black",
+//   year: 2023,
+
+//   drive: function () {
+
+// if you just write the ${model} it will not work so you need to use this.model
+// this = object name
+// if we write the object name . model it will work the same
+//  this.model and car1.model is the same
+
+//     console.log(`You drive the ${this.model}`);
+//   },
+// };
+
+// const car2 = {
+//   model: "Ferrari",
+//   color: "Orange",
+//   year: 2023,
+
+//   drive: function () {
+//     console.log(`You drive the ${this.model}`);
+//   },
+// };
+
+// car1.drive();
+// car2.drive();
+
+// If you use this outside of an object that you it will be in context of window object of the browser as it is the immediate context for this.
