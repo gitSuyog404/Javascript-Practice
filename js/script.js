@@ -1545,3 +1545,32 @@
 // console.log(Player2.score);
 // Player2.pause();
 // Player2.exit();
+
+// # Constructors
+// It is a special method of a class
+// It's job is to accept arguments and assign properties
+// You can use the same constructors as template for other values
+
+// class Student {
+//   constructor(name, age, gpa) {
+//     this.name = name;
+//     this.age = age;
+//     this.gpa = gpa;
+//   }
+
+//   study() {
+//     console.log(`${this.name} studies 4 hours a day`);
+//   }
+// }
+
+// const student1 = new Student("Wick", 30, 3.9);
+// console.log(student1.name);
+// console.log(student1.age);
+// console.log(student1.gpa);
+// student1.study();
+
+// const student2 = new Student("Bruce", 32, 4.0);
+// console.log(student2.name);
+// console.log(student2.age);
+// console.log(student2.gpa);
+// student2.study();
