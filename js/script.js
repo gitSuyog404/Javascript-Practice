@@ -1623,3 +1623,118 @@
 // nameoftheclass.staticmethodname();
 
 // Car.startRace();
+// 3:34:23
+
+// # inheritance
+// A child class can inherit all the methods and properties from another class
+
+// class Rabbit {
+//   alive = true;
+//   name = "Rabbit";
+
+//   eat() {
+//     console.log(`This ${this.name} is eating.`);
+//   }
+
+//   sleep() {
+//     console.log(`This ${this.name} is Sleeping.`);
+//   }
+
+//   run() {
+//     console.log(`This ${this.name} is running`);
+//   }
+// }
+
+// class Fish {
+//   alive = true;
+//   name = "Fish";
+
+//   eat() {
+//     console.log(`This ${this.name} is eating.`);
+//   }
+
+//   sleep() {
+//     console.log(`This ${this.name} is Sleeping.`);
+//   }
+
+//   swim() {
+//     console.log(`This ${this.name} is swimming`);
+//   }
+// }
+
+// class Hawk {
+//   alive = true;
+//   name = "Hawk";
+
+//   eat() {
+//     console.log(`This ${this.name} is eating.`);
+//   }
+
+//   sleep() {
+//     console.log(`This ${this.name} is Sleeping.`);
+//   }
+
+//   Fly() {
+//     console.log(`This ${this.name} is Flying.`);
+//   }
+// }
+
+// In programming we dont like to repeat code
+// Using class  to create Parent class so that the child class can inherit
+
+class Animal {
+  alive = true;
+
+  eat() {
+    console.log(`This ${this.name} is eating.`);
+  }
+
+  sleep() {
+    console.log(`This ${this.name} is Sleeping.`);
+  }
+}
+
+class Rabbit extends Animal {
+  name = "Rabbit";
+
+  run() {
+    console.log(`This ${this.name} is running`);
+  }
+}
+
+class Fish extends Animal {
+  name = "Fish";
+
+  swim() {
+    console.log(`This ${this.name} is swimming`);
+  }
+}
+
+class Hawk extends Animal {
+  name = "Hawk";
+
+  fly() {
+    console.log(`This ${this.name} is Flying.`);
+  }
+}
+
+// Creating the objects
+const rabbit = new Rabbit();
+const fish = new Fish();
+const hawk = new Hawk();
+
+console.log(rabbit.alive);
+console.log(fish.alive);
+console.log(hawk.alive);
+
+rabbit.eat();
+rabbit.sleep();
+rabbit.run();
+
+fish.eat();
+fish.sleep();
+fish.swim();
+
+hawk.eat();
+hawk.sleep();
+hawk.fly();
