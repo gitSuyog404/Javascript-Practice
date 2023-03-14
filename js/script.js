@@ -1886,24 +1886,24 @@
 
 // # Create an array of objects
 
-class Car {
-  constructor(model, year, color) {
-    this.model = model;
-    this.year = year;
-    this.color = color;
-  }
+// class Car {
+//   constructor(model, year, color) {
+//     this.model = model;
+//     this.year = year;
+//     this.color = color;
+//   }
 
-  drive() {
-    console.log(`You drive the ${this.model}`);
-  }
-}
+//   drive() {
+//     console.log(`You drive the ${this.model}`);
+//   }
+// }
 
-const car1 = new Car("Mustang", 2023, "BLACK");
-const car2 = new Car("Ferrari", 2022, "RED");
-const car3 = new Car("Buggati", 2024, "ORANGE");
-const car4 = new Car("McLaren", 2025, "SILVER");
+// const car1 = new Car("Mustang", 2023, "BLACK");
+// const car2 = new Car("Ferrari", 2022, "RED");
+// const car3 = new Car("Buggati", 2024, "ORANGE");
+// const car4 = new Car("McLaren", 2025, "SILVER");
 
-const cars = [car1, car2, car3, car4];
+// const cars = [car1, car2, car3, car4];
 // If you need properties or methods console.log(cars[0].properties or methods())
 // console.log(cars[0].model);
 // console.log(cars[1].model);
@@ -1913,10 +1913,77 @@ const cars = [car1, car2, car3, car4];
 // cars[1].drive();
 // cars[1].drive();
 
-function startRace(cars) {
-  for (const carr of cars) {
-    carr.drive();
-  }
-}
+// function startRace(cars) {
+//   for (const carr of cars) {
+//     carr.drive();
+//   }
+// }
 
-startRace(cars);
+// startRace(cars);
+
+// # Anonymous objects
+//  Objects without a name , it is not directly referenced and has less syntax, No need for unique names
+// One downside is that we dont have direct access to these objects
+
+// class Card {
+//   constructor(value, suit) {
+//     this.value = value;
+//     this.suit = suit;
+//   }
+// }
+
+// let card1 = new Card("A", "Spades");
+// let card2 = new Card("A", "Hearts");
+// let card3 = new Card("A", "Diamonds");
+// let card4 = new Card("A", "Clubs");
+// let card5 = new Card("2", "Spades");
+// let card6 = new Card("2", "Hearts");
+// let card7 = new Card("2", "Diamonds");
+// let card8 = new Card("2", "Clubs");
+
+// let cards = [card1, card2, card3, card4, card5, card6, card7, card8];
+// To access one of these properties of one of these card we can do so directly by the object name or by an array element
+
+// console.log(`${card1.value} of ${card1.suit}`);
+// console.log(`${cards[0].value} of ${cards[0].suit}`);
+// Both of these are the same
+
+// We need to create a lot of unique names for objects in this one
+// A better way to do this would be to use anonymous functions
+
+// class Card {
+//   constructor(value, suit) {
+//     this.value = value;
+//     this.suit = suit;
+//   }
+// }
+
+// new Card("A", "Spades");
+// new Card("A", "Hearts");
+// new Card("A", "Diamonds");
+// new Card("A", "Clubs");
+// new Card("2", "Spades");
+// new Card("2", "Hearts");
+// new Card("2", "Diamonds");
+// new Card("2", "Clubs");
+
+// In place of adding some object names directly to our array when we instanciate a card object we can actually place that within the array
+
+// let cards = [
+//   new Card("A", "Spades"),
+//   new Card("A", "Hearts"),
+//   new Card("A", "Diamonds"),
+//   new Card("A", "Clubs"),
+//   new Card("2", "Spades"),
+//   new Card("2", "Hearts"),
+//   new Card("2", "Diamonds"),
+//   new Card("2", "Clubs"),
+// ];
+
+// In order to access the properties of an anonymouos object we need to access it indirectly
+
+// console.log(`${cards[0].value} of ${cards[0].suit}`);
+
+// printing out all of them using forEach()
+
+// cards.forEach((card) => console.log(`${card.value} of ${card.suit}`));
