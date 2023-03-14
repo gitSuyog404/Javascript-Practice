@@ -1883,3 +1883,40 @@
 // }
 // changeColor(car3, "GOLD");
 // displayInfo(car3);
+
+// # Create an array of objects
+
+class Car {
+  constructor(model, year, color) {
+    this.model = model;
+    this.year = year;
+    this.color = color;
+  }
+
+  drive() {
+    console.log(`You drive the ${this.model}`);
+  }
+}
+
+const car1 = new Car("Mustang", 2023, "BLACK");
+const car2 = new Car("Ferrari", 2022, "RED");
+const car3 = new Car("Buggati", 2024, "ORANGE");
+const car4 = new Car("McLaren", 2025, "SILVER");
+
+const cars = [car1, car2, car3, car4];
+// If you need properties or methods console.log(cars[0].properties or methods())
+// console.log(cars[0].model);
+// console.log(cars[1].model);
+// console.log(cars[2].model);
+
+// cars[0].drive();
+// cars[1].drive();
+// cars[1].drive();
+
+function startRace(cars) {
+  for (const carr of cars) {
+    carr.drive();
+  }
+}
+
+startRace(cars);
