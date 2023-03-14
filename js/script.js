@@ -2028,3 +2028,45 @@
 
 // finally will always execute doesn't matter if your code is successful or unsuccessful
 // finally block is good for clean up
+
+//# setTimeOut()
+// It invokes a function after a number of milliseconds
+// It is an asynchronous function (doesn't pause execution)
+
+// We pass in either callback, a function expression or an arrow function expression
+// Syntax- setTimeout(callback/function/arrowfunction, time in milliseconds)
+
+// It is possible to have multiple setTimeOut methods executing concurrently(at the same time)
+
+// let item = "crypto";
+// let price = 690;
+
+// let timer1 = setTimeout(firstMessage, 3000);
+// if you are going to pass arguments then
+
+// let timer1 = setTimeout(firstMessage, 3000, item, price);
+// let timer2 = setTimeout(secondMessage, 6000);
+// let timer3 = setTimeout(thirdMessage, 9000);
+
+// If at any time you need to clear or cancel your setTimeOut method you can use clearTimeOut method
+
+// function firstMessage(item, price) {
+//   alert(`Buy this ${item} for ${price}`);
+// }
+
+// function secondMessage() {
+//   alert(`This has valuable concepts `);
+// }
+
+// function thirdMessage() {
+//   alert(`Buy it nowwwwwwww`);
+// }
+
+// document.getElementById("myButton").onclick = function () {
+//   clearTimeout(timer1);
+//   clearTimeout(timer2);
+//   clearTimeout(timer3);
+//   alert("Thanks for buying the course bwahhahahah");
+// };
+
+// 4:12:00
