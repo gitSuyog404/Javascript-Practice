@@ -1987,3 +1987,44 @@
 // printing out all of them using forEach()
 
 // cards.forEach((card) => console.log(`${card.value} of ${card.suit}`));
+
+// Error Handling
+// Errors are objects with a description of something went wrong
+// Can't open a file
+// Lose connection
+// User types incorrect input
+// TypeError
+
+// throw = executes a user-defined error
+
+// console.lag();
+
+// One way to handle errors is to surround any dangerous could with try block
+
+// !try block and catch Block
+// If you use try block then you need to follow it with a catch block
+
+// try {
+//   console.lag();
+// } catch (error) {
+//   console.log(error);
+// }
+
+// Sometimes in your program something will go wrong but it wont generate an error
+// In that case you should use throw keyword
+
+// try {
+//   let x = window.prompt("Enter a number");
+//   x = Number(x);
+
+//   if (isNaN(x)) throw "That wasn't a number!";
+//   if (x == "") throw "That is empty you dumb or wot";
+//   console.log(`${x} is a number`);
+// } catch (error) {
+//   console.log(error);
+// } finally {
+//   console.log("This always executes");
+// }
+
+// finally will always execute doesn't matter if your code is successful or unsuccessful
+// finally block is good for clean up
