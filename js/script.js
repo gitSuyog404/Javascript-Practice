@@ -1799,3 +1799,55 @@
 // console.log(hawk.name);
 // console.log(hawk.age);
 // console.log(hawk.flightSpeed);
+
+// # getters and setters
+
+// get - it binds an object property to a function when that property is accessed.
+// The property and getter cannot have the same name.
+// A common naming convention with properties of objects is by preceeding the name with _
+// using _ will let the other developers know that this is a protected property and aware them abt not messing with it.
+
+// By associating a protected property with only a getter , it will become read only and not writable;
+
+// Benefits of getters
+// 1. It increases data security
+// 2. You can perform some additional logic when you access a property directly.
+// To use a getter you type the object name followed by the getter name
+// car.power
+
+// Example:
+
+class Car {
+  constructor(power) {
+    this._power = power;
+    this._gas = 30;
+  }
+
+  get power() {
+    return `${this._power}HP`;
+  }
+
+  get gas() {
+    return `${this._gas}L (${(this._gas / 50) * 100}%)`;
+  }
+
+  set gas(value) {
+    if (value > 50) {
+      value = 50;
+    } else if (value < 0) {
+      value = 0;
+    }
+    this._gas = value;
+    // Since gas has a setter that means it is writable
+  }
+}
+
+let car = new Car(600);
+car.gas = 38;
+console.log(car.power);
+console.log(car.gas);
+
+// Setters
+//  set - it binds an object property to a function when that property is assigned a value.
+
+// 3:49:20
