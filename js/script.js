@@ -1682,59 +1682,120 @@
 // In programming we dont like to repeat code
 // Using class  to create Parent class so that the child class can inherit
 
-class Animal {
-  alive = true;
+// class Animal {
+//   alive = true;
 
-  eat() {
-    console.log(`This ${this.name} is eating.`);
-  }
+//   eat() {
+//     console.log(`This ${this.name} is eating.`);
+//   }
 
-  sleep() {
-    console.log(`This ${this.name} is Sleeping.`);
-  }
-}
+//   sleep() {
+//     console.log(`This ${this.name} is Sleeping.`);
+//   }
+// }
 
-class Rabbit extends Animal {
-  name = "Rabbit";
+// class Rabbit extends Animal {
+//   name = "Rabbit";
 
-  run() {
-    console.log(`This ${this.name} is running`);
-  }
-}
+//   run() {
+//     console.log(`This ${this.name} is running`);
+//   }
+// }
 
-class Fish extends Animal {
-  name = "Fish";
+// class Fish extends Animal {
+//   name = "Fish";
 
-  swim() {
-    console.log(`This ${this.name} is swimming`);
-  }
-}
+//   swim() {
+//     console.log(`This ${this.name} is swimming`);
+//   }
+// }
 
-class Hawk extends Animal {
-  name = "Hawk";
+// class Hawk extends Animal {
+//   name = "Hawk";
 
-  fly() {
-    console.log(`This ${this.name} is Flying.`);
-  }
-}
+//   fly() {
+//     console.log(`This ${this.name} is Flying.`);
+//   }
+// }
 
-// Creating the objects
-const rabbit = new Rabbit();
-const fish = new Fish();
-const hawk = new Hawk();
+// // Creating the objects
+// const rabbit = new Rabbit();
+// const fish = new Fish();
+// const hawk = new Hawk();
 
-console.log(rabbit.alive);
-console.log(fish.alive);
-console.log(hawk.alive);
+// console.log(rabbit.alive);
+// console.log(fish.alive);
+// console.log(hawk.alive);
 
-rabbit.eat();
-rabbit.sleep();
-rabbit.run();
+// rabbit.eat();
+// rabbit.sleep();
+// rabbit.run();
 
-fish.eat();
-fish.sleep();
-fish.swim();
+// fish.eat();
+// fish.sleep();
+// fish.swim();
 
-hawk.eat();
-hawk.sleep();
-hawk.fly();
+// hawk.eat();
+// hawk.sleep();
+// hawk.fly();
+
+// # super keyword
+//  It refers to the parent class.
+// It is commonly used to invoke constructor of a parent class
+
+// It promotes code reusability.
+
+// class Animal {
+// We pass the property inside constructor(property1,property2){}
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+// }
+
+// class Rabbit extends Animal {
+//   constructor(name, age, runSpeed) {
+// this.name = name;
+// this.age = age;
+// We need to use super to access these so
+//     super(name, age);
+
+//     this.runSpeed = runSpeed;
+//   }
+// }
+
+// class Fish extends Animal {
+//   constructor(name, age, swimSpeed) {
+// this.name = name;
+// this.age = age;
+//     super(name, age);
+
+//     this.swimSpeed = swimSpeed;
+//   }
+// }
+
+// class Hawk extends Animal {
+//   constructor(name, age, flightSpeed) {
+// this.name = name;
+// this.age = age;
+//     super(name, age);
+
+//     this.flightSpeed = flightSpeed;
+//   }
+// }
+
+// const rabbit = new Rabbit("Bunny", 1, 40);
+// const fish = new Fish("Bunny", 1, 100);
+// const hawk = new Hawk("Mihawk", 1, 260);
+
+// console.log(rabbit.name);
+// console.log(rabbit.age);
+// console.log(rabbit.runSpeed);
+
+// console.log(fish.name);
+// console.log(fish.age);
+// console.log(fish.swimSpeed);
+
+// console.log(hawk.name);
+// console.log(hawk.age);
+// console.log(hawk.flightSpeed);
