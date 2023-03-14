@@ -1817,37 +1817,69 @@
 
 // Example:
 
-class Car {
-  constructor(power) {
-    this._power = power;
-    this._gas = 30;
-  }
+// class Car {
+//   constructor(power) {
+//     this._power = power;
+//     this._gas = 30;
+//   }
 
-  get power() {
-    return `${this._power}HP`;
-  }
+//   get power() {
+//     return `${this._power}HP`;
+//   }
 
-  get gas() {
-    return `${this._gas}L (${(this._gas / 50) * 100}%)`;
-  }
+//   get gas() {
+//     return `${this._gas}L (${(this._gas / 50) * 100}%)`;
+//   }
 
-  set gas(value) {
-    if (value > 50) {
-      value = 50;
-    } else if (value < 0) {
-      value = 0;
-    }
-    this._gas = value;
-    // Since gas has a setter that means it is writable
-  }
-}
+// set gas(value) {
+//   if (value > 50) {
+//     value = 50;
+//   } else if (value < 0) {
+//     value = 0;
+//   }
+//   this._gas = value;
+// Since gas has a setter that means it is writable
+//   }
+// }
 
-let car = new Car(600);
-car.gas = 38;
-console.log(car.power);
-console.log(car.gas);
+// let car = new Car(600);
+// car.gas = 38;
+// console.log(car.power);
+// console.log(car.gas);
 
 // Setters
 //  set - it binds an object property to a function when that property is assigned a value.
 
 // 3:49:20
+
+// # Passing objects as arguments
+
+// class Car {
+//   constructor(model, year, color) {
+//     this.model = model;
+//     this.year = year;
+//     this.color = color;
+//   }
+// }
+
+// const car1 = new Car("Mustang", 2023, "BLACK");
+// const car2 = new Car("Ferrari", 2022, "RED");
+// const car3 = new Car("Buggati", 2024, "ORANGE");
+
+// When you are passing objects into the function the parameter name is a nickname that you assign temporarily
+// Set the parameter name to something descriptive of what you are accepting as an argument
+// function displayInfo(car) {
+//   console.log(car.model);
+//   console.log(car.year);
+//   console.log(car.color);
+// }
+
+// displayInfo(car1);
+// displayInfo(car2);
+// displayInfo(car3);
+
+// function changeColor(car, color) {
+//   car.color = color;
+// }
+// changeColor(car3, "GOLD");
+// displayInfo(car3);
