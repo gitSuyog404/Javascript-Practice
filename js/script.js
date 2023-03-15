@@ -2196,3 +2196,16 @@
 // console.log("Start");
 // setTimeout(() => console.log("This is synchronous"), 5000);
 // console.log("END");
+
+// # Console.time() = Starts a timer you can use to track how long an operation takes.
+// Give each timer a unique name.
+
+// You give the name as a string within the ("")
+// Start
+// console.time("Response time");
+// alert("Click the Ok Button");
+
+// setTimeout(() => console.log("HELLO WORLD"), 3000);
+
+// End
+// console.timeEnd("Response time");
