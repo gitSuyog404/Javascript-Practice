@@ -2070,3 +2070,25 @@
 // };
 
 // 4:12:00
+
+// # setInterval()
+// It invokes a function repeatedly after a number of milliseconds
+// It is an asynchronous function and it doesn't pause the execution of your program
+
+// Count up timer
+// let count = 0;
+// let max = Number(window.prompt("Count up to what number?"));
+
+// We can pass in callbacks,functions or arrow functions
+// Syntax - setInterval(callback/functions/arrowfunctions, time)
+// const myTimer = setInterval(countUp, 2000);
+
+// function countUp() {
+//   count += 1;
+//   console.log(count);
+//   if (count >= max) {
+// But we need to pass in the id of the setInterval method as arguments
+// clearInterval(myTimer);
+// To stop the setInterval method we can use the clearInterval method
+//   }
+// }
