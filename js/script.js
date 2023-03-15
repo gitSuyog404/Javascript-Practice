@@ -2173,3 +2173,26 @@
 
 // update();
 // setInterval(update, 1000);
+
+// ! Synchronous code
+// In an ordered sequence.
+// Step by Step linear instructions
+// (start now, finish now)
+
+// # Asynchronous code
+// Out of sequence
+//  Example:
+// Access a database
+// Fetch a file
+// Tasks that take time
+// (Start now, Finish sometime later)
+
+// Example of synchronous code
+// console.log("Start");
+// console.log("This is synchronous");
+// console.log("END");
+
+// Example of Asynchronous code
+// console.log("Start");
+// setTimeout(() => console.log("This is synchronous"), 5000);
+// console.log("END");
