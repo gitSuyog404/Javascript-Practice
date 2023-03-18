@@ -2527,3 +2527,21 @@ Array.from(.children)
 // let children = Array.from(element.children);
 
 // children.forEach((child) => (child.style.backgroundColor = "lightgreen"));
+
+// # add/change HTML elements
+// .innerHTML (vulnerable to XSS attacks)
+// .textContent (more secure) - this is preffered
+
+// const nameTag = document.createElement("h1");
+// nameTag.textContent = "hello";
+// document.body.append(nameTag);
+
+const myList = document.querySelector("#fruit");
+const listItem = document.createElement("li");
+listItem.textContent = "Grapes";
+// myList.append(listItem);
+// append - at last
+// prepend - at first
+// to add in middle
+
+myList.insertBefore(listItem, myList.getElementsByTagName("li")[1]);
