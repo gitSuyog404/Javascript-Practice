@@ -2380,3 +2380,35 @@ promise
 
 // But since we are not using catch in await we need to :
 // 1. Surround any dangerous code with try{}
+
+// # Es6 Modules
+// The idea behind a module is that it's a file of reusable code
+//  We can import sections of pre-written code to use whenever we want
+// They are great for any general utility values and functions
+//  It helps to make your code more reusable and maintainable
+// Think of modules as separate chapters of a book
+
+// import { PI, getCircumference, getArea } from "./math_util.js";
+
+// console.log(PI);
+
+// let circumference = getCircumference(10);
+// console.log(circumference);
+
+// let area = getArea(7);
+// console.log(area);
+
+// Another way to import
+// If there are a lot of things to import then
+// import * as _descriptivename from "./filename"
+// If you import this way then you need to precede everything with the _descriptivename.
+
+// import * as MathUtil from "./math_util.js";
+
+// console.log(MathUtil.PI);
+
+// let circumference = MathUtil.getCircumference(10);
+// console.log(circumference);
+
+// let area = MathUtil.getArea(7);
+// console.log(area);
