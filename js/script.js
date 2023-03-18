@@ -2426,3 +2426,64 @@ promise
 
 // document.body.style.backgroundColor = "aqua";
 // document.getElementById("myDiv").innerHTML = "HELLO JAVASCRIPT";
+
+// # Element selectors
+
+// ! Get elements by ID
+// let element = document.getElementById("myTitle");
+// element.style.backgroundColor = "greenyellow";
+
+// ! Get elements by Name
+// let fruits = document.getElementsByName("fruits");
+// this method returns a node list and it is similar to an array
+// console.log(fruits);
+
+// fruits.forEach((fruit) => {
+//   if (fruit.checked) {
+//     console.log(fruit.value);
+//   }
+// });
+
+// ! Get elements by Tagname
+
+// let vegetables = document.getElementsByTagName("li");
+
+// console.log(vegetables);
+// vegetables[0].style.backgroundColor = "greenyellow";
+
+// ! Get elements by ClassName
+
+// It is also an array-like object but it behaves similarly to an array
+
+// let desserts = document.getElementsByClassName("desserts");
+
+// desserts[0].style.backgroundColor = "greenyellow";
+
+//  Query selector
+//  Either by ID , classname,tag,attribute
+
+// If you are selecting an id be sure to precede the name with #
+// let element = document.querySelector("#myTitle");
+// element.style.backgroundColor = "aqua";
+
+// If you are selecting an class be sure to precede the name with .
+
+// let element = document.querySelector(".desserts");
+// element.style.backgroundColor = "aqua";
+
+// querySelector selects the first element of any group
+// If you want to select all elements then you need to use querySelectorAll
+
+// let element = document.querySelector("li");
+// element.style.backgroundColor = "aqua";
+
+// First element with "for ="" attribute"
+// let element = document.querySelector("[for]");
+// element.style.backgroundColor = "aqua";
+
+// ! Using querySelectorAll
+
+// let element = document.querySelectorAll("li");
+// element.forEach((element) => {
+//   element.style.backgroundColor = "lightgreen";
+// });
