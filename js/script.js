@@ -2412,3 +2412,17 @@ promise
 
 // let area = MathUtil.getArea(7);
 // console.log(area);
+
+// # DOM
+//  DOM - Document Object Model (API)
+// It is an interface for changing the content of a page
+
+// console.log(document);  this will show whatever is in your html as html is the document
+// console.dir(document); this will list out all the properties of your DOM
+
+// console.log(document.title);
+
+// document.title = "TITLEEE";
+
+// document.body.style.backgroundColor = "aqua";
+// document.getElementById("myDiv").innerHTML = "HELLO JAVASCRIPT";
