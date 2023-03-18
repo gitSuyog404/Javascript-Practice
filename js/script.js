@@ -2487,3 +2487,43 @@ promise
 // element.forEach((element) => {
 //   element.style.backgroundColor = "lightgreen";
 // });
+
+// # DOM traversal
+/*
+.firstElementChild 
+.lastElementChild 
+.parentElement 
+.nextElementSibling 
+.prevoiusElementSibling 
+.children[]
+Array.from(.children)
+*/
+
+// let element = document.body;
+// let child = element.firstElementChild;
+// child.style.backgroundColor = "lightgreen";
+
+// 5:06:24
+
+// let element = document.querySelector("#vegetables");
+// let parent = element.parentElement;
+// parent.style.backgroundColor = "lightgreen";
+
+// let element = document.querySelector("#vegetables");
+// let sibling = element.nextElementSibling;
+// let sibling = element.previousElementSibling;
+// sibling.style.backgroundColor = "lightgreen";
+
+// let element = document.querySelector("#fruit");
+// let child = element.lastElementChild;
+// child.style.backgroundColor = "lightgreen";
+
+// let element = document.querySelector("#fruit");
+// let child = element.children[0];
+// This doesn't have the forEach method
+// child.style.backgroundColor = "lightgreen";
+
+// let element = document.querySelector("#fruit");
+// let children = Array.from(element.children);
+
+// children.forEach((child) => (child.style.backgroundColor = "lightgreen"));
