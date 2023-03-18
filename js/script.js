@@ -2536,12 +2536,25 @@ Array.from(.children)
 // nameTag.textContent = "hello";
 // document.body.append(nameTag);
 
-const myList = document.querySelector("#fruit");
-const listItem = document.createElement("li");
-listItem.textContent = "Grapes";
+// const myList = document.querySelector("#fruit");
+// const listItem = document.createElement("li");
+// listItem.textContent = "Grapes";
 // myList.append(listItem);
 // append - at last
 // prepend - at first
 // to add in middle
 
-myList.insertBefore(listItem, myList.getElementsByTagName("li")[1]);
+// myList.insertBefore(listItem, myList.getElementsByTagName("li")[1]);
+
+// # Add/Change CSS properties
+
+// const title = document.getElementById("myTitle");
+// title.style.backgroundColor = "aqua";
+// title.style.color = "rgb(50,200,250)";
+// title.style.fontFamily = "consolas";
+// title.style.textAlign = "center";
+// title.style.border = "2px solid";
+// title.style.display = "none";
+
+// In javascript you use camelCase which means
+// The first letter of the first word is not uppercase and the first letter of the second word is uppercase
