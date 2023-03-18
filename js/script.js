@@ -2213,3 +2213,75 @@
 // 4:33:41
 // skip
 // skip
+
+// # Promises
+// promise - It is an object that encapsulates the result of an asynchronous operation and it lets asynchronous methods return values like synchronous methods
+// "I promise to return something in the future"
+
+// Within new Promise(callback/function/arrowfunction);
+// const promise = new Promise((resolve, reject) => {});
+// If our asynchronous process is successful we will invoke resolve callback and if not we will invoke reject callback
+
+// Promises have states:
+// the STATE is 'pending' then: 'fulfilled' or 'rejected'
+// the Result is what can be returned
+// There is 2 parts to a promise producing and consuming
+
+/*
+
+// ! You dont necessary have to reject a promise
+This is the producing portion
+
+const promise = new Promise((resolve, reject) => {
+  let fileLoaded = true;
+  if (fileLoaded) {
+    // If you have arguments for the callbacks
+    resolve("File Loaded");
+  } else {
+    reject("File did not load successfully");
+  }
+});
+*/
+
+// const promise = new Promise((resolve, reject) => {
+//   let fileLoaded = true;
+//   let fileLoaded = false;
+//   if (fileLoaded) {
+// If you have arguments for the callbacks
+//     resolve("File Loaded");
+//   } else {
+//     reject("File did not load successfully");
+//   }
+// });
+
+// If our promise is resolved then we can perform the then method:
+//   promise.then();
+// We can pass in  promise.then(callback/function/arrow function)
+// _promisename.then();
+
+// If there is any exception errors then we can catch it by
+// promise.then((value) => console.log(value)).catch();
+
+/*
+This is the consuming portion
+promise
+  .then((value) => console.log(value))
+  .catch((error) => console.log(error));
+*/
+
+// promise
+//   .then((value) => console.log(value))
+//   .catch((error) => console.log(error));
+
+// const promise = new Promise((resolve) => {
+//   setTimeout(resolve, 5000);
+// });
+
+// promise.then(() => console.log("Thanks for waiting"));
+
+const wait = (time) =>
+  new Promise((resolve) => {
+    setTimeout(resolve, time);
+  });
+
+wait(3000).then(() => console.log("Thanks for waiting"));
