@@ -2336,3 +2336,47 @@ promise
 // when we invoke the function we are returning a promise back to the spot in which we invoked the function
 
 // It is better to use async keyword as it makes this a little simpler with less syntax
+
+// # Await
+// await - It makes an async function wat for a Promise
+
+// async function loadFile() {
+//   let fileLoaded = true;
+
+//   if (fileLoaded) {
+//     return "File loaded";
+//   } else {
+//     throw "File not loaded";
+//   }
+// }
+
+// loadFile()
+//   .then((value) => console.log(value))
+//   .catch((error) => console.log(error));
+
+// Another way of writing this but without the final 2 lines of code is using await
+// to use await we need to place it inside another async function
+// You can only use await inside a async function
+
+// async function loadFile() {
+//   let fileLoaded = true;
+
+//   if (fileLoaded) {
+//     return "File loaded";
+//   } else {
+//     throw "File not loaded";
+//   }
+// }
+
+// async function startProcess() {
+//   try {
+//     let message = await loadFile();
+//     console.log(message);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+// startProcess();
+
+// But since we are not using catch in await we need to :
+// 1. Surround any dangerous code with try{}
