@@ -2558,3 +2558,31 @@ Array.from(.children)
 
 // In javascript you use camelCase which means
 // The first letter of the first word is not uppercase and the first letter of the second word is uppercase
+
+// # Events
+// onlick - when you click something happens
+// onload - when the web browser loads it does something
+// onchange - when an element has changed it does something
+// onmouseover - when we move our cursor over something something happens
+// onmouseout - when you leave an element something happens
+// onmousedown - when you click on the element something happens
+// this is not different from onclick but it pairs well with onmouseup
+// onmouseup - when we let go of the click something happens
+
+// const element = document.getElementById("myButton");
+// element.onclick = doSomething;
+// element.onchange = doSomething;
+// element.onmouseover = doSomething;
+// element.onmouseout = doSomethingElse;
+
+// const element = document.getElementById("myDiv");
+// element.onmousedown = doSomething;
+// element.onmouseup = doSomethingElse;
+// function doSomething() {
+// alert("You clicked the button");
+// element.style.backgroundColor = "greenyellow";
+// }
+
+// function doSomethingElse() {
+//   element.style.backgroundColor = "red";
+// }
