@@ -2279,9 +2279,60 @@ promise
 
 // promise.then(() => console.log("Thanks for waiting"));
 
-const wait = (time) =>
-  new Promise((resolve) => {
-    setTimeout(resolve, time);
-  });
+// const wait = (time) =>
+//   new Promise((resolve) => {
+//     setTimeout(resolve, time);
+//   });
 
-wait(3000).then(() => console.log("Thanks for waiting"));
+// wait(3000).then(() => console.log("Thanks for waiting"));
+
+// # Async
+// async - It makes a function return a Promise
+
+// const promise = new Promise((resolve, reject) => {
+//   let fileLoaded = true;
+
+//   if (fileLoaded) {
+//     resolve("File Loaded");
+//   } else {
+//     reject("File NOT Loaded");
+//   }
+// });
+
+// promise
+//   .then((value) => console.log(value))
+//   .catch((error) => console.log(error));
+
+// async function loadFile() {
+//   let fileLoaded = true;
+
+//   if (fileLoaded) {
+//     return "File Loaded";
+//   } else {
+//     throw "File NOT Loaded";
+//   }
+// }
+
+// loadFile()
+//   .then((value) => console.log(value))
+//   .catch((error) => console.log(error));
+
+// Another way of doing this which is simpler to understand but a lot more syntax
+
+// function loadFile() {
+//   let fileLoaded = true;
+
+//   if (fileLoaded) {
+//     return Promise.resolve("File Loaded");
+//   } else {
+//     return Promise.reject("File NOT Loaded");
+//   }
+// }
+
+// loadFile()
+//   .then((value) => console.log(value))
+//   .catch((error) => console.log(error));
+
+// when we invoke the function we are returning a promise back to the spot in which we invoked the function
+
+// It is better to use async keyword as it makes this a little simpler with less syntax
