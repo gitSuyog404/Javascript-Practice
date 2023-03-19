@@ -2620,3 +2620,18 @@ Array.from(.children)
 //   alert(`You selected ${this.id}`);
 //   this.style.backgroundColor = "lightblue";
 // }
+
+// # Show/hide HTML elements
+
+// const myButton = document.querySelector("#myButton");
+// const myImg = document.querySelector("#myImg");
+
+// myButton.addEventListener("click", () => {
+//   if (myImg.style.display == "none") {
+//     myImg.style.display = "block";
+//   } else {
+//     myImg.style.display = "none";
+//   }
+// });
+
+// You can use visibility to keep the space reserved for the image and shift all the content after the image below it
