@@ -2586,3 +2586,37 @@ Array.from(.children)
 // function doSomethingElse() {
 //   element.style.backgroundColor = "red";
 // }
+
+// # addEventListener()
+// .addEventListener(event,function,useCapture)
+// You can add many event handlers to one element
+// Even the same event that invokes different functions
+// Using this it is easy to wait for multiple events
+
+// const innerDiv = document.getElementById("innerDiv");
+// innerDiv.addEventListener("mouseover", changeRed);
+// innerDiv.addEventListener("mouseout", changeGreenYellow);
+
+// function changeRed() {
+//   innerDiv.style.backgroundColor = "red";
+// }
+
+// function changeGreenYellow() {
+//   innerDiv.style.backgroundColor = "greenyellow";
+// }
+
+// 5:27:26
+
+// ! useCapture
+// What would happen exactly if we have an outer div and inner div and inner div is  inside outer div and both of these elements are waiting for the same event which event will be handled first the inner element or the outer element?
+
+// const innerDiv = document.getElementById("innerDiv");
+// const outerDiv = document.getElementById("outerDiv");
+
+// innerDiv.addEventListener("click", changeBlue);
+// outerDiv.addEventListener("click", changeBlue, true);
+
+// function changeBlue() {
+//   alert(`You selected ${this.id}`);
+//   this.style.backgroundColor = "lightblue";
+// }
