@@ -1550,6 +1550,7 @@
 // It is a special method of a class
 // It's job is to accept arguments and assign properties
 // You can use the same constructors as template for other values
+// The "new" keyword is used in Javascript to create a object from a constructor function. The new keyword has to be placed before the constructor function call and it will create a new object, and it sets the prototype of this object to the constructor function's prototype property.
 
 // class Student {
 //   constructor(name, age, gpa) {
@@ -2902,3 +2903,60 @@ Array.from(.children)
 //   window.alert("You must be 18+ to visit this site");
 //   window.close();
 // }
+
+// # Cookie
+// It is a small text file stored on your computer used to remember information about the user saved in name=value pairs
+
+// console.log(navigator.cookieEnabled);
+// document.cookie = "firstName=Wick; expires=Sun, 1 January 2024 12:00:00 UTC; path=/"
+
+// Creating a function to create a cookie
+
+// const firstText = document.querySelector("#firstText");
+// const lastText = document.querySelector("#lastText");
+// const submitBtn = document.querySelector("#submitBtn");
+// const cookieBtn = document.querySelector("#cookieBtn");
+
+// submitBtn.addEventListener("click", () => {
+//   setCookie("firstName", firstText.value, 1);
+//   setCookie("lastName", lastText.value, 1);
+// });
+
+// cookieBtn.addEventListener("click", () => {
+//   firstText.value = getCookie("firstName");
+//   lastText.value = getCookie("lastName");
+// });
+
+// function setCookie(name, value, daysToLive) {
+//   const date = new Date();
+//   date.setTime(date.getTime() + daysToLive * 24 * 60 * 60 * 1000);
+//   let expires = ` expires = ${date.toUTCString()}  `;
+//   document.cookie = `${name}=${value}; ${expires}; path=/`;
+// }
+
+// setCookie("firstName", "Wick", 1);
+// setCookie("email", "Wick@gmail.com", 1);
+
+// console.log(document.cookie);
+
+// function deleteCookie(name) {
+//   setCookie(name, null, null);
+// }
+
+// deleteCookie("email");
+
+// function getCookie(name) {
+//   const cDecoded = decodeURIComponent(document.cookie);
+// console.log(cDecoded);
+// const cArray = cDecoded.split("; ");
+// console.log(cArray);
+//   let result = null;
+//   cArray.forEach((element) => {
+//     if (element.indexOf(name) == 0) {
+//       result = element.substring(name.length + 1);
+//     }
+//   });
+//   return result;
+// }
+
+// console.log(getCookie("firstName"));
