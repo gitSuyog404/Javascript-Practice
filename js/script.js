@@ -2797,8 +2797,8 @@ Array.from(.children)
 
 // 5:50:54
 
-let canvas = document.getElementById("myCanvas");
-let context = canvas.getContext("2d");
+// let canvas = document.getElementById("myCanvas");
+// let context = canvas.getContext("2d");
 
 // context.strokeStyle = "purple";
 // context.lineWidth = 5;
@@ -2865,3 +2865,40 @@ let context = canvas.getContext("2d");
 // context.fillStyle = "grey";
 // context.textAlign = "center";
 // context.fillText("JAVASCRIPT", canvas.width / 2, canvas.height / 2);
+
+// # Window Object
+// window = It is an interface used to talk to the web browser and the DOM is the property of the window.
+
+// console.dir(window);
+
+// console.log(window.innerWidth);
+// console.log(window.innerHeight);
+
+// console.log(window.outerWidth);
+// console.log(window.outerHeight);
+
+// console.log(window.scrollX);
+// console.log(window.scrollY);
+
+// console.log(window.location.href);
+// window.location.href = "https://google.com";
+
+// console.log(window.location.hostname);
+// console.log(window.location.pathname);
+
+// const myButton = document.querySelector("#myButton");
+
+// myButton.addEventListener("click", () => {
+// window.open();
+// window.close() will close the current window
+// window.print() will print the current page
+// window.alert("TEXT") will give a alert popup
+// window.confirm ("Press Ok to continue") will give a confirmation box
+// window.prompt() take input from user
+// });
+
+// let age = window.prompt("Enter your age");
+// if (age < 18) {
+//   window.alert("You must be 18+ to visit this site");
+//   window.close();
+// }
