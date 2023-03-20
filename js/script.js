@@ -2635,3 +2635,41 @@ Array.from(.children)
 // });
 
 // You can use visibility to keep the space reserved for the image and shift all the content after the image below it
+
+// 5:35:28
+
+// # Detect Key Presses
+
+// window.addEventListener("keydown", (event) => {
+//   console.log(event.key);
+// });
+
+// const myDiv = document.getElementById("myDiv");
+// window.addEventListener("keydown", move);
+// let x = 0;
+// let y = 0;
+// function move(event) {
+//   switch (event.key) {
+//     case "ArrowDown":
+//       y += 5;
+//       myDiv.style.top = y + "px";
+//       break;
+//     case "ArrowUp":
+//       y -= 5;
+//       myDiv.style.top = y + "px";
+//       break;
+
+//     case "ArrowRight":
+//       x += 5;
+//       myDiv.style.left = x + "px";
+//       break;
+
+//     case "ArrowLeft":
+//       x -= 5;
+//       myDiv.style.left = x + "px";
+//       break;
+
+//     default:
+//       break;
+//   }
+// }
