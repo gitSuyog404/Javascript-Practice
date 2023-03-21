@@ -64,6 +64,48 @@
     /=
 */
 
+// Important Operators
+// # Conditional Operators
+
+// 1.  == (double equal ) - checks for equality
+/*
+  x == 8   false
+  x ==5  true
+  x == "5" true
+*/
+
+// 2. === (triple equal sign ) - checks for equality and data types
+/*
+x === 5  true
+
+x=== '5'  false because data type mismatch
+*/
+
+// 3. >, <  greater than , less than
+/*
+  8 > x  true
+  x < 8 false
+
+*/
+
+// 4. >=, <=  greater than or equal to , less than or equal to
+/*
+35 >= x true
+8 <= x false
+ */
+
+// 5. !=  not equal to
+/*
+  x != 8 true
+ */
+
+// 6. !==  not equal value or type
+/*
+  x !== "35"  true - same value, different type
+  x !== "35" false - same value, same type
+
+*/
+
 // ## Operator precedence
 /*
  This words just like BODMAS in maths 
